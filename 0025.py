@@ -2,7 +2,7 @@ fn_1 = 1
 fn_2 = 1
 
 idx = 2
-while fn_2 < 1e400:
+while len(str(fn_2)) < 1000:
 	temp = fn_2
 	fn_2 = fn_1 + fn_2
 	fn_1 = temp
