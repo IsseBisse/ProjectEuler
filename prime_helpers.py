@@ -2,6 +2,9 @@ import math
 
 def is_prime(number):
     # Naive
+    if number == 1:
+        return False
+
     for div in range(2, int(math.sqrt(number))+1):
     # for div in range(2, number):
         if number%div == 0:
